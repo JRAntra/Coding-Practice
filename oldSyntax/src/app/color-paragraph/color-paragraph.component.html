@@ -1,0 +1,5 @@
+<article>
+  <h3>{{ paraConfig.title }}</h3>
+  <p>{{ paraConfig.body }}</p>
+  <button [ngStyle]="{'backgroundColor':paraConfig.color}" (click)="onChoseColor()">set {{ paraConfig.color }}</button>
+</article>

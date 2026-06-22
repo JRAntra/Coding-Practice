@@ -1,1 +1,6 @@
-<h1>Welcome to Coding Practice Playgroud</h1>
+<h1 [ngStyle]="{'color': selectedColor}">Complete Angular Tutorial for Beginners</h1>
+<div class="container">
+  <ng-container *ngFor="let paragraph of dataSource">
+    <app-color-paragraph [paraConfig]="paragraph" (colorSelected)="changeTitleColor($event)"></app-color-paragraph>
+  </ng-container>
+</div>
